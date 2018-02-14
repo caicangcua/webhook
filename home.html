@@ -3,14 +3,19 @@
 <head>
     <title></title>
 	<meta charset="utf-8" />
-    <script type="text/javascript">
-        function test() {
-            alert("Fuck PHP and Heroku")
-        }
-    </script>
+    <script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+
 </head>
 <body>
     <h1>Test GitHub + Heroku</h1>
     <a href="javascript:void(0)" onclick="test()">Fuck PHP and Heroku</a>
+    <script type="text/javascript">
+        function test() {
+            alert("Fuck PHP and Heroku")
+        }
+        $(document).ready(function () {
+            alert("document loaded");
+        });
+    </script>
 </body>
 </html>
